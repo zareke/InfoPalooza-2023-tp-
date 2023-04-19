@@ -1,0 +1,15 @@
+Z:\Programacion\TP_03_Nazar\bin\Debug\net6.0\TP_03_Nazar.exe
+Z:\Programacion\TP_03_Nazar\bin\Debug\net6.0\TP_03_Nazar.deps.json
+Z:\Programacion\TP_03_Nazar\bin\Debug\net6.0\TP_03_Nazar.runtimeconfig.json
+Z:\Programacion\TP_03_Nazar\bin\Debug\net6.0\TP_03_Nazar.dll
+Z:\Programacion\TP_03_Nazar\bin\Debug\net6.0\TP_03_Nazar.pdb
+Z:\Programacion\TP_03_Nazar\obj\Debug\net6.0\TP_03_Nazar.csproj.AssemblyReference.cache
+Z:\Programacion\TP_03_Nazar\obj\Debug\net6.0\TP_03_Nazar.GeneratedMSBuildEditorConfig.editorconfig
+Z:\Programacion\TP_03_Nazar\obj\Debug\net6.0\TP_03_Nazar.AssemblyInfoInputs.cache
+Z:\Programacion\TP_03_Nazar\obj\Debug\net6.0\TP_03_Nazar.AssemblyInfo.cs
+Z:\Programacion\TP_03_Nazar\obj\Debug\net6.0\TP_03_Nazar.csproj.CoreCompileInputs.cache
+Z:\Programacion\TP_03_Nazar\obj\Debug\net6.0\TP_03_Nazar.dll
+Z:\Programacion\TP_03_Nazar\obj\Debug\net6.0\refint\TP_03_Nazar.dll
+Z:\Programacion\TP_03_Nazar\obj\Debug\net6.0\TP_03_Nazar.pdb
+Z:\Programacion\TP_03_Nazar\obj\Debug\net6.0\TP_03_Nazar.genruntimeconfig.cache
+Z:\Programacion\TP_03_Nazar\obj\Debug\net6.0\ref\TP_03_Nazar.dll

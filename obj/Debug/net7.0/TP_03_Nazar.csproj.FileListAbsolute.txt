@@ -1,0 +1,5 @@
+Z:\Programacion\TP_03_Nazar\obj\Debug\net7.0\TP_03_Nazar.csproj.AssemblyReference.cache
+Z:\Programacion\TP_03_Nazar\obj\Debug\net7.0\TP_03_Nazar.GeneratedMSBuildEditorConfig.editorconfig
+Z:\Programacion\TP_03_Nazar\obj\Debug\net7.0\TP_03_Nazar.AssemblyInfoInputs.cache
+Z:\Programacion\TP_03_Nazar\obj\Debug\net7.0\TP_03_Nazar.AssemblyInfo.cs
+Z:\Programacion\TP_03_Nazar\obj\Debug\net7.0\TP_03_Nazar.csproj.CoreCompileInputs.cache
