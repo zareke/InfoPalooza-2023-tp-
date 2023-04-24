@@ -2,14 +2,13 @@ class Tiquetera{
 
 
 
-int UltimoID{get;set;} = 1;
+public static int UltimoID{get;set;} = 1;
 
 
-int DevolverUltimoId(){
+public static int DevolverUltimoId(){
 
 
-return 0;
-
+return UltimoID++;
 
 
 

@@ -1,12 +1,13 @@
 class Cliente{
 #region constructor
-        public Cliente(string dNI, string apellido, string nombre, int tipoEntrada, double totalAbonado)
+        public Cliente(string dNI, string apellido, string nombre, int tipoEntrada, double totalAbonado, DateTime diaDePago)
         {
             DNI = dNI;
             Apellido = apellido;
             Nombre = nombre;
             TipoEntrada = tipoEntrada;
             TotalAbonado = totalAbonado;
+            DiaDePago = diaDePago;
         }
 #endregion
 
@@ -26,6 +27,8 @@ public int TipoEntrada{get;private set;}
 
 
 public double TotalAbonado{get;private set;}
+
+public DateTime DiaDePago{get;private set;}
 
 #endregion
 
