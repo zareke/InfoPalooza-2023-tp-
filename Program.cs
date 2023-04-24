@@ -1,5 +1,5 @@
 ﻿//MENU
-Dictionary<string,Cliente> clientes = new Dictionary<string, Cliente>();
+Dictionary<string,Cliente> clientes = null;
 string resp;
 do
 {
@@ -21,7 +21,7 @@ do
     {
 
         case "1":
-            
+            NuevaInscripcion();
 
             break;
 
@@ -118,12 +118,31 @@ Console.Write(prompt + ": ");
 
 
 }
-double IngresarDouble(string prompt)
+int valorEntrada;
+int IngresarTipoEntrada(string prompt)
+{
+Console.Write(prompt + ": ");
+    int num=0;
+    string cadena = Console.ReadLine();
+    while (cadena == null || !int.TryParse(cadena, out num) || !(num >0 && num <=4))
+    {
+
+        Console.Write("Valor ingresado incorrecto.\nVuelva a intentarlo: ");
+        cadena = Console.ReadLine();
+    }
+valorEntrada = num;
+    return num;
+
+
+
+
+}
+double IngresarDinero(string prompt)
 {
 Console.Write(prompt + ": ");
     double num=0;
     string cadena = Console.ReadLine();
-    while (cadena == null && !double.TryParse(cadena, out num))
+    while (cadena == null || !double.TryParse(cadena, out num) || !(num -valorEntrada >=0))
     {
 
         Console.Write("Valor ingresado incorrecto.\nVuelva a intentarlo: ");
@@ -140,11 +159,62 @@ Console.Write(prompt + ": ");
 //FUNCIONES DE PROYECTO
 void NuevaInscripcion(){
 string dni = IngresarDNI("Ingrese el DNI");
-clientes.Add(dni,new Cliente(dni,IngresarCadena("Ingrese el apellido"), IngresarCadena("Ingrese el nombre"), IngresarInt("Ingrese el tipo de entrada (1,2,3,4)"), IngresarDouble("Ingrese el total abonado")));
+clientes.Add(dni,new Cliente(dni,IngresarCadena("Ingrese el apellido"), IngresarCadena("Ingrese el nombre"),IngresarTipoEntrada("Ingrese el tipo de entrada (1,2,3,4)"), IngresarDinero("Ingrese el total abonado")));
 
+
+}
+
+int ObtenerValorEntrada(int tipo){
+    switch(tipo){
+case 1:
+return 15000;
+break;
+case 2:
+return 30000;
+break;
+case 3:
+return 10000;
+break;
+case 4:
+return 40000;
+break;
+default: 
+return 0;
+break;
+    }
 }
 
 
 
+void ObtenerEstadisticasDelEvento(){
 
+
+if(clientes == null) Console.WriteLine("Aún no se anotó nadie");
+else{
+int cantTipo1= 0, cantTipo2=0,cantTipo3=0,cantTipo4=0;
+foreach(string d in clientes.Keys){
+
+switch(clientes[d].TipoEntrada){
+case 1:
+cantTipo1++;
+break;
+
+case 2:
+cantTipo2++;
+break;
+
+case 3:
+cantTipo3++;
+break;
+
+case 4:
+cantTipo4++;
+break;
+}
+
+}
+
+Console.WriteLine($"Hay {clientes.Count} cliente/s, de los cuales ");
+}
+}
 
