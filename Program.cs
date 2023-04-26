@@ -251,5 +251,4 @@ void CambiarEntrada(string prompt)
         }
     }
 }
-//cambiar fecha en obtener estadisticas
 #endregion
