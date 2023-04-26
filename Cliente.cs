@@ -33,12 +33,25 @@ public DateTime DiaDePago{get;private set;}
 #endregion
 
 #region funciones
-    
-    bool CambiarEntrada(int tipoEntrada, double totalAbonado){
-    
-    
-    
+
+    public bool CambiarEntrada(int tipoEntrada, double totalAbonado, DateTime diaDePago){
+
+    if(TipoEntrada != tipoEntrada && TotalAbonado < totalAbonado){
+
+
+TipoEntrada = tipoEntrada;
+TotalAbonado = totalAbonado;
+DiaDePago=diaDePago;
+
+
+                return true;
+
+    }else{
+
+
         return false;
+    }
+
     }
 #endregion
 }
